@@ -57,7 +57,6 @@ class DetailDisplay extends Component{
             )  
         }}
     render(){
-        console.log(this.props.data)
     return(
         <React.Fragment >
              {this.renderData(this.props)}

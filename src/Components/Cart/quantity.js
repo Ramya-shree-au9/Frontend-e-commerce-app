@@ -27,7 +27,6 @@ export class quantity extends Component {
         
     }
   render() {
-      console.log(this.props)
     return (
            <div ><button value={this.props.Idata} name={this.props.Qdata} onClick={this.reduceQuantity} className='glyphicon glyphicon-minus btn icon'></button>
            {this.props.Qdata} <button value={this.props.Idata} name={this.props.Qdata} onClick={this.increaseQuantity} className='glyphicon glyphicon-plus btn icon'></button> </div> 

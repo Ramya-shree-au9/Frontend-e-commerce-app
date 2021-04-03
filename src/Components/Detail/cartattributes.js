@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-// import axios from 'axios'
 import {connect} from 'react-redux'
-import {PostAttributes} from '../../Actions'
+import {PostAttributes,CartItems} from '../../Actions'
 
-
-
-// const url = 'https://backendapi.turing.com/shoppingcart/add'
 class Addcart extends Component{
     constructor(props){
         super(props)
@@ -21,7 +17,6 @@ class Addcart extends Component{
         this.setState({selectedColor:e.target.value})
     }
     sizeSelect=(e)=>{
-        console.log(e.target.value)
         this.setState({selectedSize:e.target.value})
     }
 
@@ -47,9 +42,9 @@ class Addcart extends Component{
          }
      }
    
-     cartFunction=()=>{
-        this.props.dispatch(PostAttributes(this.props.id,this.state.selectedColor,this.state.selectedSize))   
-
+     cartFunction=async()=>{
+       await this.props.dispatch(PostAttributes(this.props.id,this.state.selectedColor,this.state.selectedSize))   
+       await this.props.dispatch(CartItems())
     }
 
     render(){

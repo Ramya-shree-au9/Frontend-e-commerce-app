@@ -35,16 +35,16 @@ const Contact =()=>{
           <div class="social-media">
             <p>Connect with us :</p>
             <div class="social-icons">
-              <a href="#">
+              <a href="#" alt=''>
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#">
+              <a href="#" alt=''>
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="#">
+              <a href="#" alt=''>
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="#" alt=''>
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>

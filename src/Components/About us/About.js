@@ -43,42 +43,8 @@ const About =()=> {
     
     </section>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   )
 }
 
 export default About
 
-
-
-// <div class="about-section1">
-// <div class="inner-container">
-    // <h1>How We Do it/<a href=""><h6>Home....</h6></a></h1>
-    // <p class="text">
-        // Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore 
-// earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos 
-// totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
-    // </p>
-    // <div class="skills">
-        // <span>Lorem ipsum dolor sit amet.</span>
-        // <span>ipsum dolor sit amet</span>
-        // <span>Cipsum dolor sit amet</span>
-    // </div>
-// </div>
-// </div>
-// 

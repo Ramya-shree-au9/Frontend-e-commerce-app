@@ -1,39 +1,10 @@
-// .back {
-// background-color: #000;
-// .Dm {
-// font-family: 'Lobster', cursive;
-// color: white;
-// }
-// a {
-// font-family: 'Lobster', cursive;
-// color: #fff;
-// }
-// .form-control {
-// border-radius: 50px;
-// }
-// button {
-// height: 33px;
-// width: 50px;
-// border-radius: 10px;
-// padding-bottom: 10px;
-// padding-top: 5px;
-// }
-// 
-// .sub {
-// color: #fff;
-// }
-// 
-// 
-// }
-// .nb {
-// height: 50%;
-// }
+
 .navbar {
     width: 100%;
+    background-color: rgba(165, 42, 42, 0.253);
     .img {
         width: 70%;
     }
-    
     .Dm {
         font-family: 'Lobster', cursive;
         color: white;
@@ -53,11 +24,9 @@
     .username{
         color: white;
         font-size: 1.338rem;
-        // margin: 17px 0 0 20px;
     }
     .ft {
         font-size: 1.338rem;
-        // padding-left: 3%;
     }
     
     .inp {

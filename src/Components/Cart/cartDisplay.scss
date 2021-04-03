@@ -1,22 +1,16 @@
-// .carthead{
-//     margin: 30%;
-// }
 
 @media only screen and (max-width: 575px) {
-    // .cartitems{ margin:0 2%;}
     td.tabletext,th.tabletext{
         font-size: 110%;
-        // width:10%;
-    }
-   
+    }   
 }
+
 @media (min-width:576px) and (max-width: 1800px) {
     .cartitems{ margin:0 10%;}
     td.tabletext,th.tabletext{
         font-size: 200%;  
         width:15%; 
-    }
-   
+    } 
 }
 
 .cartsection{
@@ -31,9 +25,7 @@
     .cartitems{
         background-color:white;
         border-radius: 12px;
-        // margin: 0 8%; 
         padding:1% 0%;
-        // height: 30px;
         border: rgba(0, 0, 0, 0.568) 2px solid;
         
     }
@@ -72,7 +64,6 @@
     }
     .img{
         width:70%;
-        // height: 50%;
         padding: 5% 0;
     }
     .cartcontent{

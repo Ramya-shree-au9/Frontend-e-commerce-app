@@ -53,7 +53,6 @@ class cartDisplay extends Component{
         localStorage.removeItem('userDetail')
         localStorage.removeItem('username')
         this.props.dispatch(ClearCart())
-        // this.props.history.push('/') 
     }
 
     renderdata=({cartData})=>{
@@ -91,12 +90,10 @@ class cartDisplay extends Component{
         }
     }
     render(){
-        // console.log(this.props.data.length)
     return(
         <div className='cartsection'>
             <div className='cartitems'>
                 <h1 className='carthead'>My cart</h1>
-            
                 {(this.props.cartData && this.props.Tamt)?
                 this.renderdata(this.props):
                 <div></div>} 

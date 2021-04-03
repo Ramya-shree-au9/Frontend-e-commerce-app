@@ -1,7 +1,6 @@
 import {connect} from 'react-redux'
 import React,{Component} from 'react'
 import './sidebar.scss'
-import {AllProducts} from '../../Actions'
 
 class SideBar extends Component{
     constructor(){
@@ -13,24 +12,15 @@ class SideBar extends Component{
 
         }
     }
-    // componentDidUpdate(prevProps, prevState){
-    //    if(prevState.dep !== this.state.dep){
-    //         this.setState({button:true})
-    //    }
-    // }
+   
     clickHandler=(e)=>{      
-        // e.target.style.backgroundColor = "#424e4e";
-        // {this.state.button?e.target.style.backgroundColor = "#424e4e": e.target.style.backgroundColor = "Blue";}
+       
         console.log('jk', e.target.name)
         this.setState({dep:e.target.name})
         this.props.dep_id(e.target.value)
         this.setState({button:true})
     }
-    // changeHandler=(e)=>{
-    //     console.log(e.target.value)
-       
-    // }
-
+ 
     departmentRender=({depdata})=>{
         if(depdata){
             return(
@@ -43,14 +33,9 @@ class SideBar extends Component{
 
     countRender=({Tcount})=>{
         if(Tcount){
-            // if(Tcount.count){
             return(
                 Tcount.count
             )
-        // }
-        // else{
-        //     this.props.dispatch(AllProducts())
-        // }
     }
        
         
@@ -86,15 +71,12 @@ class SideBar extends Component{
     }
     renercolor=()=>{
         if(this.state.dep){
-            console.log(this.state.dep)
         (this.state.dep).style.backgroundColor = 'red'
         }
         
     }
 
-    render(){console.log(this.state)
-
-        // let btn_class = this.state.button?'blackbut':'whitebut'
+    render(){
         return(
             <div className='sidesection'>
            <center className='sidebar'> <h1 className='sideHead'>Filter<span className='filter'> {this.countRender(this.props)} </span>items</h1>

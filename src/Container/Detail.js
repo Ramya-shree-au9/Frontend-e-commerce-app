@@ -16,7 +16,6 @@ class Details extends Component{
     }
 
     render(){
-       console.log(this.props.match.params.id)
     return(
         <React.Fragment>
             {this.props.detaildata.detailProduct && this.props.detaildata.Colors && this.props.detaildata.Sizes && this.props.detaildata.Previews?
@@ -31,7 +30,6 @@ class Details extends Component{
 }}
 
 function mapStateToProps(state){
-    console.log('sts',state)
     return{
         detaildata:state.details,
         

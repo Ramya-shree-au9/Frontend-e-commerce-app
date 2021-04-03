@@ -10,7 +10,6 @@ class cart extends Component {
   }
    
   render() {
-    console.log(this.props.data.cartProduct)
      return (
        <React.Fragment>
            {this.props.data?
