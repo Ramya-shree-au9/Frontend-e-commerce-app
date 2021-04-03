@@ -1,0 +1,68 @@
+// .back {
+// background-color: #000;
+// .Dm {
+// font-family: 'Lobster', cursive;
+// color: white;
+// }
+// a {
+// font-family: 'Lobster', cursive;
+// color: #fff;
+// }
+// .form-control {
+// border-radius: 50px;
+// }
+// button {
+// height: 33px;
+// width: 50px;
+// border-radius: 10px;
+// padding-bottom: 10px;
+// padding-top: 5px;
+// }
+// 
+// .sub {
+// color: #fff;
+// }
+// 
+// 
+// }
+// .nb {
+// height: 50%;
+// }
+.navbar {
+    width: 100%;
+    .img {
+        width: 70%;
+    }
+    
+    .Dm {
+        font-family: 'Lobster', cursive;
+        color: white;
+        font-size: 2.8rem;
+    }
+    .sign{
+        color: white;
+    }
+    .glow {
+        color: white;
+        text-align: start;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+        text-shadow: 0 0 10px #fff, 0 0 20px green, 0 0 30px white, 0 0 40px green, 0 0 50px white, 0 0 60px green, 0 0 70px maroon;
+    }
+    .username{
+        color: white;
+        font-size: 1.338rem;
+        // margin: 17px 0 0 20px;
+    }
+    .ft {
+        font-size: 1.338rem;
+        // padding-left: 3%;
+    }
+    
+    .inp {
+        font-size: 15px;
+    }
+    
+}
+

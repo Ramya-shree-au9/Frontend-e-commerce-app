@@ -1,0 +1,71 @@
+.sidesection .sidebar .button {
+  padding: 4%;
+  outline: none;
+  font-size: 250%;
+  font-weight: 400;
+  width: 100%;
+  border: 2px solid yellow;
+  margin-top: 5%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 3px black;
+          box-shadow: 0px 3px 3px black;
+}
+
+.sidesection .blackbut {
+  background-color: red;
+}
+
+.sidesection .whitebut {
+  background-color: yellowgreen;
+}
+
+.sidesection .img {
+  height: 650px;
+  width: 1600px;
+  margin: auto;
+}
+
+.sidesection .sidebar {
+  font-family: 'Barlow Condensed', sans-serif;
+  padding: 10% 15% 15% 15%;
+  background-color: rgba(0, 0, 0, 0.733);
+  margin-top: 3%;
+  text-transform: uppercase;
+}
+
+.sidesection .sidebar .sideHead {
+  margin-bottom: 5px;
+  background-color: white;
+  font-weight: 800;
+  padding: 5%;
+}
+
+.sidesection .sidebar .sideHead .filter {
+  color: darksalmon;
+}
+
+.sidesection .sidebar .subHead {
+  color: white;
+  font-size: 300%;
+  font-weight: 500;
+  border-radius: 0%;
+  margin-top: 20px;
+  padding: 3%;
+}
+
+.sidesection .sidebar .button {
+  cursor: pointer;
+}
+
+.sidesection .sidebar .button:focus {
+  background-color: darksalmon;
+}
+
+.sidesection #Regional, .sidesection #Nature, .sidesection #Seasonal {
+  background-color: darksalmon;
+}
+
+.sidesection #btn {
+  background-color: white;
+}
+/*# sourceMappingURL=sidebar.css.map */

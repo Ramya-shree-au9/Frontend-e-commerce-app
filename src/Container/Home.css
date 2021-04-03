@@ -1,0 +1,12 @@
+.section {
+  padding: 0 2%;
+  background-color: whitesmoke;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#loader {
+  height: 520px;
+  width: 1350px;
+}
+/*# sourceMappingURL=Home.css.map */

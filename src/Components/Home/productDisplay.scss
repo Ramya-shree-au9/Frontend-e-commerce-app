@@ -1,0 +1,206 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+$color:#007b5e !important;
+$transform:preserve-3d;
+$rotate: rotateY(180deg);
+$antirotate:rotateY(-180deg);
+$shadow: 5px 7px 9px -4px red;
+$size :250px;
+$fixed:rotateY(0deg);
+$box-height:400px;
+
+%message-pass{
+    -webkit-transition: 1s;
+    -webkit-transform-style: $transform;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform-style: $transform;
+    -ms-transform-style: $transform;
+    -o-transition: 1s;
+    -o-transform-style: $transform;
+    transition: 1s;
+    transform-style: $transform;
+}
+
+%message-shared{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+   
+}
+.homepage{
+.description{  
+    font-weight: 100;
+    color:green;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+
+}
+
+.errormsg{
+    text-align: center;
+    font-size: 420%;
+    color: rgba(0, 0, 0, 0.315);
+}
+.slick
+    {
+        font-family: 'slick';
+        font-size: 60px;
+        line-height: 20px;   
+    }
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform:$fixed;
+    -moz-transform: $fixed;
+    -o-transform: $fixed;
+    -ms-transform: $fixed;
+    transform: $fixed;
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside{
+    -webkit-transform: $rotate;
+    -moz-transform: $rotate;
+    -o-transform: $rotate;
+    transform: $rotate;
+}
+
+.mainflip {
+    @extend %message-pass;
+    position: relative;
+    // -moz-transform: perspective(1000px);
+}
+
+.frontside {
+    @extend %message-shared;
+    @extend %message-pass;
+    // -webkit-transform: rotateY(0deg);
+    // -ms-transform: rotateY(0deg);
+    position: relative;
+    z-index: 2;
+    margin:0 2% 3% 2%;
+    // margin-top: 20px;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    
+    .card {
+        height:$box-height; 
+        border-radius: 20px; 
+       
+    }
+    .card-title {
+        font-family: 'Courgette', cursive; 
+        color:$color;
+        font-size: 200%;
+        padding-top: 5%;
+    }
+    .card-body  {
+        img{
+            width: $size;
+            height: $size; 
+            border-radius:15%;
+            margin: auto;
+            // margin-right: auto;
+            // padding-left: 40px;
+            // text-align: center;
+        }
+        .text{
+            color: red;
+            padding: 3% 0;
+            
+        }
+        .card-discount{
+            text-decoration: line-through solid blue ;
+              
+        }
+       
+    }   
+}
+
+.backside {
+    @extend %message-shared;
+    @extend %message-pass;
+    margin:0 2%;
+    min-width: 94%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    -webkit-transform: $antirotate;
+    -moz-transform: $antirotate;
+    -o-transform: $antirotate;
+    -ms-transform: $antirotate;
+    transform: $antirotate;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    // margin-left: 20px;
+    .card {
+       height: $box-height;
+       background-color:wheat;
+       border-radius: 20px; 
+    }
+    .readMorebtn{
+       margin: auto;
+        font-size: 160%;
+        color:orange;
+       
+   }
+    .text{
+        color: red;
+        padding: 4% 0;
+        font-weight: 800;
+        font-size: 195%;
+    }
+    
+    .card-title {
+        color: $color;
+        font-family: 'Courgette', cursive;
+        padding-top: 7%;
+    }
+    .HomeAttri{
+        .heading{
+            display: none;
+        }
+        .cartButton{
+            font-size: 160%;
+            outline: none;
+            border-radius: 50px;
+            margin-bottom:5%;
+            padding:5% 7%;
+       
+         }
+         .colorsselect{
+            display: inline;
+            margin: 10% 2%;
+            &:focus{
+                background-color:darksalmon;
+                border: 8px solid darksalmon;
+            }
+            button{
+                padding:2%;
+              font-size: 165%;
+              margin: 2% 1%;
+            }
+        }
+        .cartsizes{
+            display: inline;
+            margin: 8% 2%;
+            padding:1%;
+            font-size: 160%;
+            height:190%;
+           min-width:12%;
+           &:focus{
+            background-color:darksalmon;
+        }
+        }
+    }
+}
+}

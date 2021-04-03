@@ -1,0 +1,102 @@
+@media only screen and (max-width: 575px) {
+  td.tabletext, th.tabletext {
+    font-size: 110%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1800px) {
+  .cartitems {
+    margin: 0 10%;
+  }
+  td.tabletext, th.tabletext {
+    font-size: 200%;
+    width: 15%;
+  }
+}
+
+.cartsection {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: whitesmoke;
+  min-height: 490px;
+}
+
+.cartsection .carthead {
+  font-family: 'Bangers', cursive;
+  margin-bottom: 3%;
+}
+
+.cartsection .cartitems {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1% 0%;
+  border: rgba(0, 0, 0, 0.568) 2px solid;
+}
+
+.cartsection button {
+  outline: none;
+}
+
+.cartsection .totalCost {
+  padding: 1%;
+  text-align: right;
+  font-weight: 600;
+  margin-top: 1%;
+}
+
+.cartsection .emptyCart {
+  background-color: rgba(222, 184, 135, 0.5);
+  border-radius: 50px;
+  font-size: 120%;
+}
+
+.cartsection .tableHead {
+  color: rgba(0, 0, 0, 0.24);
+  font-family: 'Oleo Script', cursive;
+  padding-bottom: 3%;
+  border-bottom: rgba(0, 0, 0, 0.589) 6px solid;
+}
+
+.cartsection .clrselect {
+  font-weight: 800;
+}
+
+.cartsection .cost {
+  font-weight: 900;
+}
+
+.cartsection td.tabletext, .cartsection th.tabletext {
+  margin: 10px 0%;
+  text-align: center;
+  padding: 0 1%;
+}
+
+.cartsection .img {
+  width: 70%;
+  padding: 5% 0;
+}
+
+.cartsection .cartcontent {
+  border: black 1px solid;
+  margin: 5%;
+  -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.397);
+          box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.397);
+  background-color: wheat;
+}
+
+.cartsection .nomItems {
+  color: blue;
+  margin: 2% 0;
+}
+
+.cartsection .noItem {
+  color: red;
+  margin: 2% 0;
+}
+
+.cartsection .icon {
+  font-size: 70%;
+  padding: 3%;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=cartDisplay.css.map */

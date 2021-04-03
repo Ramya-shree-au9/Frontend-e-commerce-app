@@ -1,0 +1,140 @@
+1.npx create-react-app 
+2.npm i redux react-redux redux-logger prop-types redux-promise react-router-dom react-slick axios
+3.npm install --save redux-thunk
+4.npm install node-sass mdbreact
+npm i node-sass@4.14.1
+npm i react-star-ratings redux-form
+
+API
+
+1.Department
+https://backendapi.turing.com/departments --->(3) [regional,nature,seasonal]
+https://backendapi.turing.com/departments/{department_id}
+
+2.Categories
+https://backendapi.turing.com/categories ---->(7) [French,"Italian","Irish","Animal","Flower","Valentine's","Christmas"]
+https://backendapi.turing.com/categories/{category_id}
+https://backendapi.turing.com/categories/inDepartment/{department_id}
+
+3.attributes
+https://backendapi.turing.com/attributes ---(2) [size,color]
+[
+{
+"attribute_id": 1,
+"name": "Size"
+},
+{
+"attribute_id": 2,
+"name": "Color"
+}
+]
+
+https://backendapi.turing.com/attributes/values/{attribute_id}
+if attribute_id= 1 --->
+[
+{
+"attribute_value_id": 1,
+"value": "S"
+},
+{
+"attribute_value_id": 2,
+"value": "M"
+},
+{
+"attribute_value_id": 3,
+"value": "L"
+},
+{
+"attribute_value_id": 4,
+"value": "XL"
+},
+{
+"attribute_value_id": 5,
+"value": "XXL"
+}
+]
+
+if attribute_id= 2 -->
+[
+{
+"attribute_value_id": 6,
+"value": "White"
+},
+{
+"attribute_value_id": 7,
+"value": "Black"
+},
+{
+"attribute_value_id": 8,
+"value": "Red"
+},
+{
+"attribute_value_id": 9,
+"value": "Orange"
+},
+{
+"attribute_value_id": 10,
+"value": "Yellow"
+},
+{
+"attribute_value_id": 11,
+"value": "Green"
+},
+{
+"attribute_value_id": 12,
+"value": "Blue"
+},
+{
+"attribute_value_id": 13,
+"value": "Indigo"
+},
+{
+"attribute_value_id": 14,
+"value": "Purple"
+}
+]
+
+https://backendapi.turing.com/attributes/inProduct/{product_id}
+
+4.products
+https://backendapi.turing.com/products --- (101) 
+[
+{
+"product_id": 1,
+"name": "Arc d'Triomphe",
+"description": "This beautiful and iconic T-shirt will no doubt lead you to your own triumph.",
+"price": "14.99",
+"discounted_price": "0.00",
+"thumbnail": "arc-d-triomphe-thumbnail.gif"
+},
+{
+"product_id": 2,
+"name": "Chartres Cathedral",
+"description": "\"The Fur Merchants\". Not all the beautiful stained glass in the great cathedrals depicts saints and angels! Lay aside your furs for the summer and wear this beautiful T-shirt!",
+"price": "16.95",
+"discounted_price": "15.95",
+"thumbnail": "chartres-cathedral-thumbnail.gif"
+}
+]
+
+//search by name
+https://backendapi.turing.com/products/search?query_string={search}&all_words=on
+https://backendapi.turing.com/products/{product_id}
+
+https://backendapi.turing.com/products/inCategory/{category_id} -- /products/inCategory/{category_id}
+https://backendapi.turing.com/products/inDepartment/{department_id} ---Get a list of Products on Department
+https://backendapi.turing.com/products/{product_id}/details --Get details of a
+https://backendapi.turing.com/products/{product_id}/reviews --/products/{product_id}/reviews
+
+
+5.shoppingcart
+GET - https://backendapi.turing.com/shoppingcart/generateUniqueId -- Generete the unique CART ID
+POST - https://backendapi.turing.com/shoppingcart/add -- Add a Product in the cart
+GET - https://backendapi.turing.com/shoppingcart/{cart_id} -- Get List of Products in Shopping Cart
+DELETE - https://backendapi.turing.com/shoppingcart/empty/{cart_id} -- Empty cart
+GET - https://backendapi.turing.com/shoppingcart/totalAmount/{cart_id} -- Return a total Amount from Cart
+DELETE - https://backendapi.turing.com/shoppingcart/removeProduct/{item_id}  -- Remove a product in the cart
+PUT - https://backendapi.turing.com/shoppingcart/update/{item_id} -- increase the quantity
+
+6.images
+https://backendapi.turing.com/images/products/{image}
