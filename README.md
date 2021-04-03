@@ -34,5 +34,7 @@ ___
 API Link:https://xenodochial-franklin-49a213.netlify.app/
 
 
-## Heroku-Link: https://xenodochial-franklin-49a213.netlify.app/
+### Heroku-Link: 
+__
+https://deccan-marchant-e-com.herokuapp.com/
 
